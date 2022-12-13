@@ -1,4 +1,3 @@
- 
 from flask import Flask, jsonify, request, Response 
 from database.db import initialize_db
 from database.models import Photo, Album
