@@ -1,0 +1,15 @@
+version: "3.9"
+services:
+  backend:
+    build: ./exercise
+    image: flaskbackend:v1
+    container_name: flaskbackend
+    ports:
+      - "5000:5000"
+    depends_on:
+      - mongo 
+  mongo:
+    container_name: mongo
+    image: mongo:6.0.2
+    ports:
+      - "1048:27017"

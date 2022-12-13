@@ -1,0 +1,14 @@
+FROM alpine:3.12
+WORKDIR /usr/app
+
+COPY fibonacci.sh ./
+COPY helloDocker.sh ./
+
+ENV VAR=10
+ENV MSG="Hello Docker!"
+
+CMD ["sh", "./fibonacci.sh"]
+CMD ["sh", "./helloDocker.sh"] 
+
+
+

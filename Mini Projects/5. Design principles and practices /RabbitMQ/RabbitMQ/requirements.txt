@@ -1,0 +1,5 @@
+pika==1.2.1
+python-dateutils==2.8.2
+six==1.16.0
+wheel==0.24.0
+Jinja2==2.8

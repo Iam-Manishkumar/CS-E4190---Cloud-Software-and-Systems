@@ -1,0 +1,38 @@
+#
+image: python:3.10.8-alpine3.16
+
+variables:
+  app_name: "main.py"
+
+
+#before_script:
+ # - python3 -V
+ # - python3 -m pip install -r requirements.txt
+ ## - python3 python3 -m pip install -r requirements.txt
+  
+
+apitest:
+  script:
+    - python3 -m pip install -r requirements.txt
+    - python3 -m pip install pytest
+    - python3 -m pytest
+    - python3 -m pip install -r requirements.txt
+    
+apilint:
+  script:
+    - python3 -m pip install -r requirements.txt
+    - python3 -m pip install pylint
+    - python3 -m pylint ./app/$app_name
+
+apicompile:
+  script:
+    - python3 -m pip install -r requirements.txt
+    - python3 -m compileall ./app
+    - pip install --upgrade pip
+    - python3 -m pip install -r requirements.txt
+
+apideploy:
+  image: docker:20.10
+  #name: courses-api:v1
+  script:
+    - docker build --network host -t courses-api:v1 .
