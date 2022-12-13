@@ -1,4 +1,4 @@
-Aalto University CS-E4190 - Cloud Software and Systems - Assignments, and Explanation of vairous Modules 
+Aalto University CS-E4190 - Cloud Software and Systems - Mini Projects
 
 . Infrastructure management
 
