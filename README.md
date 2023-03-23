@@ -1,4 +1,4 @@
-Aalto University CS-E4190 - Cloud Software and Systems - Mini Projects
+CS-E4190 - Cloud Software and Systems - Mini Projects
 
 . Infrastructure management
 
