@@ -1,4 +1,4 @@
-CS-E4190 - Cloud Software and Systems - Mini Projects
+Cloud Software and Systems - Mini Projects
 
 . Infrastructure management
 
